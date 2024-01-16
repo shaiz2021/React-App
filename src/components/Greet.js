@@ -1,8 +1,12 @@
 import React from 'react'
-//function Greet(){
-//    return <h1> Hello it's beginning of my React World </h1>
-//}
 
-const Greet = () => <h1> Hello it's proper starting of my React World </h1>
-
+const Greet = props => {
+    console.log(props)
+    return (
+        <div>
+            <h1> Hello its {props.name} here a.k.a {props.called}</h1>
+            {props.children}
+        </div>
+    )
+}
 export default Greet
