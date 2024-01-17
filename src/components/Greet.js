@@ -1,11 +1,10 @@
 import React from 'react'
 
 const Greet = props => {
-    console.log(props)
+    const {name, called} = props
     return (
         <div>
-            <h1> Hello its {props.name} here a.k.a {props.called}</h1>
-            {props.children}
+            <h1> Hello its {name} here a.k.a {called}</h1>
         </div>
     )
 }

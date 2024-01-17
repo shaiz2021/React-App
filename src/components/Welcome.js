@@ -2,9 +2,11 @@ import React, { Component } from 'react'
 
 class Welcome extends Component {
     render() {
+        const { name, called } = this.props
+        // const {state1, state2} = this.state
         return (
             <h1>
-                Hello its {this.props.name} here a.k.a {this.props.called}
+                Hello its {name} here a.k.a {called}
             </h1>
         )
     }
