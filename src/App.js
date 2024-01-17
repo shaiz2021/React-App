@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import './App.css';
 import Greet from './components/Greet';
 import Hello from './components/Hello';
@@ -6,8 +6,8 @@ import Message from './components/Message';
 import Welcome from './components/Welcome';
 import Counter from './components/Welcome';
 
-class App extends Component {
-  render() {
+function App () {
+  
     return (
       <div className="App">
         <Counter />
@@ -30,6 +30,5 @@ class App extends Component {
       </div>
     );
   }
-}
 
 export default App;
