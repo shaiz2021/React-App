@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import Greet from './components/Greet';
 import Hello from './components/Hello';
