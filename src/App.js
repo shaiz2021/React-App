@@ -1,15 +1,19 @@
+import React, { Component } from 'react'
 import './App.css';
 import Greet from './components/Greet';
 import Hello from './components/Hello';
 import Message from './components/Message';
 import Welcome from './components/Welcome';
+import Counter from './components/Welcome';
 
-function App() {
-  return (
-    <div className="App">
-    <Message/>  
-  
-      {/*
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Counter />
+        {/*<Message/>*/}
+
+        {/*
       <Greet name='Starting' called='Initializing'>
       <p>This is children props</p>
       </Greet>
@@ -22,9 +26,10 @@ function App() {
       <Greet name='Processing' called='Mid Journey' />
       <Greet name='Ending' called='Good Bye' />
       */}
-  
-    </div>
-  );
+
+      </div>
+    );
+  }
 }
 
 export default App;
